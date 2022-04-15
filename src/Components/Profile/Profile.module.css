@@ -1,0 +1,253 @@
+.profile{
+    display: grid;
+    grid-template-areas: "leftSide middleSide rightSide";
+    grid-template-columns: .2fr .6fr .2fr;
+    background-color: #fafafa;
+}
+.left__side{
+    grid-area: leftSide;
+    display: grid;
+    grid-template-rows: 500px 100px;
+}
+.profile__information{
+display: block;
+}
+.photo__container{
+    display: block;
+    height: 260px;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
+}
+.profileImg img{
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 15%;
+    border-radius: 50%;
+}
+.profile__info{
+    display: block;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
+}
+.profile__info p{
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #125C13;
+    margin-left: 5%;
+}
+.profile__info span{
+    color: rgb(46, 46, 46);
+    margin-left: 5%;
+    background-color: #fafafa;
+    display: block;
+}
+.friends{
+    display:block;
+    margin-top: 200px;
+    margin-left: 5%;
+    width: 90%;
+    border: 1px solid black;
+}
+.friend{
+    display: inline-block;
+    
+    border: 1px solid black;
+}
+.friends img{
+    display: inline-block;
+    width: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.middle__side{
+    grid-area: middleSide;
+    grid-template-areas: "status" "images" "postsContainer";
+}
+.status{
+    grid-area: status;
+    margin-top: 20px;
+    text-align: center;
+}
+.status__label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+.status__text{
+    color: rgb(46, 46, 46);   
+}
+.status__text input{
+    width: 250px;
+    border:none;
+    box-shadow: rgba(60, 64, 67, 0.4) 0px 1px 2px 0px, rgba(60, 64, 67, 0.35) 0px 1px 3px 1px;
+}
+.posts__container{
+    grid-area: postContainer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.images{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.image{
+    display: inline-block;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.image__information{
+    font-size: smaller;
+}
+.post__theme{
+    display: grid;
+    grid-template-areas: "postImg postText";
+    grid-template-columns: .55fr .45fr;
+    grid-column-gap: 50px;
+}
+.posts__container{
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 1px;
+}
+.post__theme img{
+    grid-area: postImg;
+    width: 100%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.post__theme__text{
+    grid-area: postText;
+    display: inline-block;
+    margin-top: 10px;
+}
+.comment__container{
+    background-color: white;
+    display: block;
+}
+.comment{
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+    margin-bottom: 15px;
+    background-color: #fafafa;
+}
+.comment__img{
+    width: 50px;
+}
+.comment__name{
+    position: absolute;
+    top:5px;
+    left:52px;
+    font-size: .9em;
+    font-weight: 600;
+    color: #125C13;
+}
+.comment__text{
+    font-size: .9em;
+}
+.comment__like{
+    margin-left: 10px;
+}
+.comment__like__icon{
+    width: 10px;
+}
+.right__side{
+    grid-area: rightSide;
+}
+.event{
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 1px;
+}
+.event img{
+    width: 80%;
+    margin-left: 10%;
+}
+.event span{
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+}
+/* button */
+.changeImg{
+    width: 70px;
+    overflow:hidden;
+    margin-top: 20px;
+    display: flex;
+    margin-left: 35%;
+} 
+.edit__button,.add__comment {
+  margin-left: 10px;
+  margin-top: 20px;
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.comment__input{
+    width: 300px;
+    height: 30px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.add__comment{
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+.edit__button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+.edit__button:hover,.add__comment:hover {
+  background-color: #2c974b;
+}
+.edit__button:focus,.add__comment:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+.edit__button:disabled,.add__comment:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+.edit__button:active,.add__comment:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}

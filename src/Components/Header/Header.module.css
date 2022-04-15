@@ -1,0 +1,50 @@
+.header{
+    display: grid;
+    grid-area: header;
+    background: linear-gradient(90deg, rgba(114,189,70,1) 43%, rgba(1,57,26,1) 100%);    grid-template-areas: "logo search auth";
+    grid-template-columns: .3fr .4fr .3fr;
+    grid-template-rows: 120px;
+    position: relative;
+}
+.logo{
+    grid-area: logo;
+    margin:10px 10px
+}
+.auth{
+    grid-area: auth;
+}
+.search{
+    display: inline-block;
+    grid-area: search;
+    width: 100%;
+    margin-left: 5%;
+    position: relative;
+    margin-top: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+.search__icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 38px;
+    left: 99%;
+    opacity: .7;
+}
+.login{
+    font-size: 1.2em;
+    display:inline-block;
+    text-align: center;
+    position:absolute;
+    left: 90%;
+    top:35px;
+}
+.login span{
+    color: white;
+    display: inline-block;
+    cursor:default; 
+}
+
+
+

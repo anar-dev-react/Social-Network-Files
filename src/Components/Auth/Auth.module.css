@@ -1,0 +1,32 @@
+.auth {
+    grid-area: auth;
+    display: grid;
+    grid-template-areas: 'login logout';
+    grid-template-columns: .5fr .5fr;
+}
+.logout {
+    display: inline-block;
+    top: 10px;
+    left: 50px;
+    grid-area: logout;
+}
+.logout button:hover {
+    color: #ffffff;
+    background-color: #387a12;
+}
+.logout button {
+    width: 90px;
+    border: 1px solid rgb(255, 255, 255);
+    height: 35px;
+    background-color: #255c05;
+    color: white;
+    border-radius: .25rem;
+    box-shadow: 0px 10px 13px -7px #66656533, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+.login__span {
+    cursor: pointer;
+    color: white;
+    margin-top: 30px;
+    margin-left: 30px;
+}

@@ -1,0 +1,18 @@
+.sider{
+    grid-area: sider;
+    background-color:#087511be
+}
+.sider a{
+    display: block;
+    text-decoration:none;
+    margin-top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+}
+.active{
+    font-weight:bolder;
+    font-size: 1.3em;
+}
+

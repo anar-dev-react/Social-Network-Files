@@ -1,0 +1,149 @@
+
+.dialogs{
+    grid-area: cont;
+    min-height: 600px;
+    display: grid;
+    grid-template-areas: "leftSide middleSide rightSide";
+    grid-template-columns: .2fr .6fr .2fr;
+    background-color: #fafafa;
+}
+.left__side{
+    grid-area: leftSide;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 0px;
+    background-color: rgba(214, 214, 214, 0.658);
+    border: 1px solid #d3d3d3;
+}
+.left__side a{
+    text-align: center;
+    margin-top: 10px;
+    width: 90%;
+    margin-left:5%;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    position: relative;
+}
+.left__side a::before{
+    content: '';
+    background: url("./../../assets/avatar.png");
+    background-size: cover;
+    position:absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    top:10px;
+    left:2%;
+}
+.active{
+    text-decoration: none;
+    color: #295f2e!important; 
+    background-color: white;
+    border-radius: 10px;
+}
+.middle__side{
+    grid-area: middleSide;
+    background-color: #295f2e0e; 
+}
+.dialog{
+    width: 70%;
+    margin-left: 15%;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 0px;
+    background-color: white;
+    border: 1px solid rgb(177, 177, 177);
+    overflow: hidden;
+}
+.dialog__block{
+    display: block;
+    margin-top: 20px;
+}
+.middle__side p{
+   display: inline-block;
+   margin-left: 20px;
+}
+.middle__side input{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70%;
+    margin-left: 10%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.my__dialog__block{
+    background-color: rgb(230, 230, 230);
+}
+.guest__dialog__block{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 0px 0px, rgba(60, 64, 67, 0.15) 0px 0px 1px 1px;
+}
+.defaultImg{
+    width: 50px;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.right__side{
+    grid-area: rightSide;
+}
+.event{
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 1px;
+}
+.event img{
+    width: 80%;
+    margin-left: 10%;
+}
+.event span{
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+}
+/* button */
+.middle__side button {
+    margin-left: 20px;
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.middle__side button:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+.middle__side button:hover {
+  background-color: #2c974b;
+}
+.middle__side button:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+.middle__side button:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+.middle__side button:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}

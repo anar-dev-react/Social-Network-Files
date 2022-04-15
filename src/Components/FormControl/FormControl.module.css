@@ -1,0 +1,7 @@
+
+.error input{
+    border: 2px solid rgb(97, 3, 3);
+}
+.error__answer span{
+    background-color: black;
+}

@@ -1,0 +1,9 @@
+.footer{
+    grid-area: footer;
+    background-color: rgba(209, 209, 209, 0.603);
+    grid-gap: 5px;
+    text-align: center;
+}
+.footer p{
+    margin-top: 35px;
+}

@@ -1,0 +1,8 @@
+.status{
+    grid-area:status;
+}
+.statusInput{
+    border: 1px solid black;
+    width: 60%;
+    margin-left: 20%;
+}
